@@ -162,18 +162,18 @@
 		<div class="row">
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-					<li><strong>Version:</strong> 1.0</li>
-					<li><strong>Author:</strong> <a href="http://www.harnishdesign.net" target="_blank">Harnish Design</a></li>
+					<li><strong>Version:</strong> 1.1.8</li>
+					<li><strong>Author:</strong> <a href="damorosodaragona.github.io" target="_blank">Dario Amoroso d'Aragona</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-					<li><strong class="font-weight-700">Created:</strong> 8 April, 2020</li>
-					<li><strong>Update:</strong> 12 May, 2020</li>
+					<li><strong class="font-weight-700">Created:</strong> 15 June, 2020</li>
+					<li><strong>Update:</strong> 15 June, 2020</li>
 				</ul>
 			</div>
 		</div>
-        <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Item Support Page</a>.</p>
+        <p class="alert alert-info">If you have any questions that are beyond the scope of this guide, Please feel free to email <a href="mailto:dario.amorosodaragona@tuni.fi">dario.amorosodaragona@tuni.fi</a>.</p>
         </section>
         
 		<hr class="divider">
@@ -182,25 +182,35 @@
 		============================ -->
         <section id="idocs_installation">
           <h2>Installation</h2>
-          <p class="lead">Follow the steps below to setup your site template:</p>
+          <p class="lead">Follow the steps below to setup the CATTO plugin:</p>
           <ol>
-            <li>Unzip the downloaded package and open the <strong>/HTML</strong> folder to find all the template files. You will need to upload these files to your hosting web server using FTP or localhost in order to use it on your website.</li>
-            <li>Below is the folder structure and needs to be uploaded to your website or localhost root directory:
-            <ul>
-			<li><code>HTML/assets</code> - Contains all of the assets referenced
-			  <ul>
-                <li><code>HTML/css</code> - Stylesheet files</li>
-                <li><code>HTML/images</code> - Images files</li>
-                <li><code>HTML/js</code> - Javacript files</li>
-                <li><code>HTML/sass</code> - Sass files</li>
-                <li><code>HTML/vendor</code> – All external libs.</li>
-              </ul>
-			</li>
-			<li><code>HTML/index.html</code> - Homepage
-			</ul>
-            </li>
-            <li>You should upload all or specific HTML files as per your need.</li>
-            <li>You are good to go for adding your content now!</li>
+            <li>1. Install a compatible JetBrains IDE, such as IntelliJ IDEA, CLion, PyCharm, or other IntelliJ-based IDEs.</li>
+            <li>2. Launch the IDE and open plugin settings</li>
+			      <li>4. Wait for the initialization of the plugin, in this phase the plugin creates some folders, please do not delete/modify them.</li>
+            <li>5.  The plugin creates a <code>confi.yaml</code> file. To start using CATTO please configure it as follow: </li>
+            <ul> <pre>
+              <code>
+              
+              #defines the absolute output path of the built project (the place where Intellij saves the .class files), 
+              #please for each line specify the production path and the test path. You can easily find this path in the project settings.
+              outputPath:
+                - /Users/ncdaam/IdeaProjects/demo/out/production/demo
+                - /Users/ncdaam/IdeaProjects/demo/out/test/demo
+              
+              #CATTO to work needs JAVA 1.8 installed. Please put here, one per line, the absolute path of the jce.jar and rt.jar 
+              #contained in the JAVA 1.8 installation folder.
+              #Then insert also the absolute path of the folder that contains the external libraries used in your project.
+              dependencies:
+                - /Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar
+                - /Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar
+                - /Users/ncdaam/IdeaProjects/demo/lib
+              
+              #this is a relative path of a temporary folder. the default value is ".tmp".
+              tempFolderPath: .tmp
+              </code>
+              </pre> 
+            </ul>
+            <li>6. Start to modify your code and commit safely. </li>>
           </ol>
         </section>
         
