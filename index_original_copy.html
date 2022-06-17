@@ -208,24 +208,24 @@
             <li>The plugin creates a <code>confi.yaml</code> file. To start using CATTO please configure it as follow: </li>
             <ul> 
               <pre>
-<code>#defines the absolute output path of the built project (the place where Intellij saves the .class files), 
-#please for each line specify the production path and the test path. You can easily find this path in the project settings.
-outputPath:
+ <code>#defines the absolute output path of the built project (the place where Intellij saves the .class files), 
+ #please for each line specify the production path and the test path. You can easily find this path in the project settings.
+ outputPath:
  - /Users/ncdaam/IdeaProjects/demo/out/production/demo
  - /Users/ncdaam/IdeaProjects/demo/out/test/demo
               
-#CATTO to work needs JAVA 1.8 installed. Please put here, one per line, the absolute path of the jce.jar and rt.jar 
-#contained in the JAVA 1.8 installation folder.
-#Then insert also the absolute path of the folder that contains the external libraries used in your project.
-dependencies:
+ #CATTO to work needs JAVA 1.8 installed. Please put here, one per line, the absolute path of the jce.jar and rt.jar 
+ #contained in the JAVA 1.8 installation folder.
+ #Then insert also the absolute path of the folder that contains the external libraries used in your project.
+ dependencies:
  - /Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar
  - /Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar
  - /Users/ncdaam/IdeaProjects/demo/lib
-              
-#this is a relative path of a temporary folder. the default value is ".tmp".
-tempFolderPath: .tmp
-</code>
-</pre> 
+               
+ #this is a relative path of a temporary folder. the default value is ".tmp".
+ tempFolderPath: .tmp
+ </code>
+ </pre> 
             </ul>
             <li>Start to modify your code and commit safely.</li>
           </ol>
