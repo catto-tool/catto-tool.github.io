@@ -102,8 +102,10 @@
       <ul class="nav flex-column ">
         <li class="nav-item"><a class="nav-link active" href="#catto_start">Getting Started</a>
           <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#catto_what">What is it</a></li>
             <li class="nav-item"><a class="nav-link" href="#catto_requirements">Requirements</a></li>
             <li class="nav-item"><a class="nav-link" href="#catto_installation">Installation and Setup</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catto_demo">Demo</a></li>
             <li class="nav-item"><a class="nav-link" href="#catto_code">Source Code</a></li>
           </ul>
         </li>
@@ -130,8 +132,8 @@
 			</div>
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-					<li><strong class="font-weight-700">Created:</strong> 15 June, 2020</li>
-					<li><strong>Update:</strong> 17 June, 2020</li>
+					<li><strong class="font-weight-700">Created:</strong> 15 June, 2022</li>
+					<li><strong>Update:</strong> 23 June, 2022</li>
 				</ul>
 			</div>
 		</div>
@@ -139,6 +141,17 @@
         </section>
         
 		<hr class="divider">
+
+       <!-- What is it
+		============================ -->
+    <section id="catto_what">
+      <h2>What is it</h2>
+      <p>A tool for Test Case Optimization. CATTO selects the tests to execute based on the changes performed in the code between two commits. 
+        When the user commits the project CATTO analyzes the source code and identifies the change between the version of the project that the user is committing and the version of the project at the previous commit. 
+        CATTO identifies and uses these informations to select and execute the tests that cover these changes.</p>
+    </section>
+    
+    <hr class="divider">
 
         <!-- Requirements
 		============================ -->
@@ -148,9 +161,9 @@
         <ol>
           <li><a href="https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html" target="_blank">Java 8 </a></li>
           <li><a href="https://www.jetbrains.com/idea/download/#section=mac" target="_blank">Intellij IDEA  (v.2021.2 - 2022.2)</a></li>
-          <li>Catto supports project using all version of Java until Java 9</li>
+          <li>Catto supports project using all version of Java until Java 8</li>
         </ol>
-        <p class="alert alert-info">Right now, Catto depends on <a href="https://github.com/soot-oss/soot" target="_blank">soot framwork</a> which support Java 9 and before.</p>
+        <p class="alert alert-info">We are working to uograde our tool. Soon wiil be possible to use CATTO on every Java project</p>
     </section>
     
     <hr class="divider">
@@ -206,7 +219,20 @@
     
     <hr class="divider">
 		
+    		
+		<!-- Video
+		============================ -->
+    <section id="catto_demo">
+      <h2>Demo Video</h2>
+      <p class="text-4">A quick demo on how CATTO can upgrade your programming workflow!</p> 
+  <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="assets/video/CATTO_DEMO.mp4" allowfullscreen></iframe>
+</div>
+    </section>
+
     
+    <hr class="divider">
+
 
 		        
 
